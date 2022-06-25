@@ -97,6 +97,13 @@ densityplot(x.avg,main="sample size 16")
 
 `r sampMean`, `r sampleSD`
 
+The graph is showing that the peak is unimodal.
+
+
+
+
+
+
 finally for 36 random samples.
 
 
