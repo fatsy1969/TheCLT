@@ -46,11 +46,60 @@ Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Ar
 
 Do this again for 4 random samples
 
+
+
+```{r}
+numb = 4
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+sampMean = mean(x.avg)
+sampleSD = sd(x.avg)
+densityplot(x.avg,main="sample size 4")
+```
+
+`r sampMean`, `r sampleSD`
+For this graph there are still 3 modes, center is getting higher
+
 Then again for 9 random samples
+
+
+```{r}
+numb = 9
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+sampMean = mean(x.avg)
+sampleSD = sd(x.avg)
+densityplot(x.avg,main="sample size 9")
+```
+
+`r sampMean`, `r sampleSD`
+
+The graph is unimodal. there are no peaks on the side
+
+
+
+
 
 then 16 random samples
 
+
+```{r}
+numb = 16
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+sampMean = mean(x.avg)
+sampleSD = sd(x.avg)
+densityplot(x.avg,main="sample size 16")
+```
+
+`r sampMean`, `r sampleSD`
+
 finally for 36 random samples.
+
+
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
