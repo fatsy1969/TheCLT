@@ -33,12 +33,16 @@ numb = 2
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
+sampMean = mean(x.avg)
+sampleSD = sd(x.avg)
 densityplot(x.avg,main="sample size 2")
 ```
 
+`r sampMean`, `r sampleSD`
+
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
- 
+ the graph is not unimodal. the graph has 3 peaks. all the peaks are not the same.
 
 Do this again for 4 random samples
 
