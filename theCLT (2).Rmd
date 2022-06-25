@@ -16,10 +16,15 @@ data("imagpop")
 KK_data <- imagpop$kkardashtemp
 my1000 <- sample(KK_data, size = 1000, replace=T)
 densityplot(my1000,main="original data")
-
+kkmean=mean(KK_data)
+kkstd=sd(KK_data)
 ```
-
+The graph is not unimodal it has 2 peaks. no the peaks are not the same in size.
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+
+mean and sd
+`r kkmean`, `r kkstd`
+
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
