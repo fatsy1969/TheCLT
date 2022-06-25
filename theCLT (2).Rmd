@@ -127,6 +127,10 @@ Write a summary paragraph describing what you observed and how it relates to the
 
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
 
+
+The means remains the same and the standard deviation has become smaller
+
+
  
 
 Then submit the link to your github project  to canvas to complete this assignment.
