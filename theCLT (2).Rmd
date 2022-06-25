@@ -120,6 +120,9 @@ densityplot(x.avg,main="sample size 36")
 
 `r sampMean`, `r sampleSD`
 
+Starting to look like a normal distribution. and has become unimodal
+
+
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
