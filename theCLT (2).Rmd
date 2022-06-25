@@ -95,7 +95,9 @@ sampleSD = sd(x.avg)
 densityplot(x.avg,main="sample size 16")
 ```
 
-`r sampMean`, `r sampleSD`
+
+
+
 
 The graph is showing that the peak is unimodal.
 
@@ -106,7 +108,17 @@ The graph is showing that the peak is unimodal.
 
 finally for 36 random samples.
 
+```{r}
+numb =36
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+sampMean = mean(x.avg)
+sampleSD = sd(x.avg)
+densityplot(x.avg,main="sample size 36")
+```
 
+`r sampMean`, `r sampleSD`
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
